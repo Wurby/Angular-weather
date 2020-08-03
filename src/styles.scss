@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+// Colors
+$primary: #2a7a5c;
+$secondary: #84a9c0;
+$complimentary: #26a96c;
+$dark: #293132;
+$light: #f4f4f6;
+$warn: #a5be00;
+// Sizing
+$large: 24px;
+$medium: 18px;
+$normal: 16px;
+
+// Misc
+$box-shadow: 0 4px 8px 0 $dark;
+
+body {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 100%;
+}

@@ -1,0 +1,9 @@
+@import "../styles.scss";
+
+.card-wrapper {
+  width: 50%;
+  height: 50%;
+  box-shadow: $box-shadow;
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+}

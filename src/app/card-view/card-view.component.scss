@@ -1,0 +1,13 @@
+@import "../../styles.scss";
+
+.header {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px $dark solid;
+  color: $light;
+  font-size: $large;
+  background-color: $primary;
+  text-align: center;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
