@@ -1,16 +1,15 @@
-import { async } from '@angular/core/testing';
-import { shareReplay } from 'rxjs/operators';
 import { LocationService } from './location.service';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable, from } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
+import { environment } from '../environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class OpenWeatherService {
-  weatherKey = '85875d330e36fcae0f5a1cd03b9b1fd7';
+  weatherKey = `${environment.weatherApiKey}`;
   ROOT_URL = 'https://api.openweathermap.org/data/2.5/onecall';
 
   constructor(private http: HttpClient, private local: LocationService) {}
